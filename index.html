@@ -1,0 +1,4302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>The First Baptist Church, Lagos | A Glorious Church</title>
+  <meta name="description"
+    content="The First Baptist Church Lagos — A glorious church where faith, fellowship, and family are cherished, nourished, and allowed to flourish. Join us every Sunday in Lagos, Nigeria." />
+  <meta name="keywords"
+    content="First Baptist Church Lagos, TFBC Lagos, Baptist Church Lagos, Church Lagos Nigeria, Christian Church Lagos, Sunday service Lagos" />
+  <meta property="og:title" content="The First Baptist Church, Lagos" />
+  <meta property="og:description"
+    content="A glorious church where faith, fellowship, and family are cherished, nourished, and allowed to flourish." />
+  <meta property="og:type" content="website" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/church_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --green-dark: #1e5438;
+      --green-primary: #2d7a52;
+      --green-medium: #3a9464;
+      --green-light: #e8f5ee;
+      --green-pale: #f2faf5;
+      --gold: #c8961a;
+      --gold-light: #e8b84b;
+      --gold-pale: #fdf6e3;
+      --coral: #d4654a;
+      --cream: #faf7f2;
+      --cream-dark: #f0ebe1;
+      --brown-light: #8b6f47;
+      --text-dark: #1a2e22;
+      --text-mid: #3d5247;
+      --text-light: #6b8578;
+      --white: #ffffff;
+      --shadow-sm: 0 2px 8px rgba(30, 84, 56, .08);
+      --shadow-md: 0 8px 32px rgba(30, 84, 56, .12);
+      --shadow-lg: 0 20px 60px rgba(30, 84, 56, .18);
+      --transition: .3s cubic-bezier(.4, 0, .2, 1);
+      --radius: 12px;
+      --radius-lg: 20px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cream);
+      color: var(--text-dark);
+      overflow-x: hidden
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    ul {
+      list-style: none
+    }
+
+    .serif {
+      font-family: 'Playfair Display', serif
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.2
+    }
+
+    .section-label {
+      font-family: 'Inter', sans-serif;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px
+    }
+
+    .section-label::before,
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+      max-width: 60px
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--green-dark);
+      margin-bottom: 16px
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-mid);
+      line-height: 1.7;
+      max-width: 600px
+    }
+
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px
+    }
+
+    .text-center {
+      text-align: center
+    }
+
+    .text-center .section-label {
+      justify-content: center
+    }
+
+    .text-center .section-subtitle {
+      margin: 0 auto
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: .9rem;
+      cursor: pointer;
+      border: none;
+      transition: var(--transition);
+      letter-spacing: .03em
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(200, 150, 26, .4)
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(200, 150, 26, .5)
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255, 255, 255, .7);
+      backdrop-filter: blur(8px)
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, .15);
+      border-color: var(--white);
+      transform: translateY(-2px)
+    }
+
+    .btn-green {
+      background: var(--green-primary);
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(45, 122, 82, .35)
+    }
+
+    .btn-green:hover {
+      background: var(--green-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(45, 122, 82, .45)
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--green-primary);
+      border: 2px solid var(--green-primary)
+    }
+
+    .btn-ghost:hover {
+      background: var(--green-primary);
+      color: var(--white);
+      transform: translateY(-2px)
+    }
+
+    section {
+      padding: 90px 0
+    }
+
+    /* ===== ANNOUNCEMENT BAR ===== */
+    #announce-bar {
+      background: linear-gradient(90deg, var(--green-dark), #0f3d25, var(--green-dark));
+      padding: 10px 24px;
+      text-align: center;
+      position: relative;
+      z-index: 1001
+    }
+
+    #announce-bar p {
+      font-size: .82rem;
+      color: rgba(255, 255, 255, .9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap
+    }
+
+    #announce-bar strong {
+      color: var(--gold-light)
+    }
+
+    #announce-bar a {
+      color: var(--gold-light);
+      font-weight: 600;
+      border-bottom: 1px solid var(--gold-light);
+      transition: var(--transition)
+    }
+
+    #announce-bar a:hover {
+      color: var(--white);
+      border-color: var(--white)
+    }
+
+    #close-announce {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, .6);
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 4px;
+      transition: var(--transition)
+    }
+
+    #close-announce:hover {
+      color: var(--white)
+    }
+
+    /* ===== NAVBAR ===== */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 0 24px;
+      transition: var(--transition)
+    }
+
+    #navbar.bar-hidden {
+      top: 0
+    }
+
+    #navbar.scrolled {
+      background: rgba(255, 255, 255, .97);
+      backdrop-filter: blur(20px);
+      box-shadow: var(--shadow-md)
+    }
+
+    .nav-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px
+    }
+
+    .nav-logo-badge {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 2px 12px rgba(45, 122, 82, .3)
+    }
+
+    .nav-logo-badge svg {
+      width: 26px;
+      height: 26px
+    }
+
+    .nav-logo-text .name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--green-dark);
+      transition: var(--transition)
+    }
+
+    #navbar:not(.scrolled) .nav-logo-text .name {
+      color: var(--white)
+    }
+
+    .nav-logo-text .tagline {
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      color: var(--gold);
+      text-transform: uppercase
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px
+    }
+
+    .nav-links a {
+      font-size: .83rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, .9);
+      transition: var(--transition);
+      position: relative
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transition: var(--transition);
+      border-radius: 1px
+    }
+
+    .nav-links a:hover::after {
+      transform: scaleX(1)
+    }
+
+    #navbar.scrolled .nav-links a {
+      color: var(--text-dark)
+    }
+
+    .nav-links a:hover {
+      color: var(--gold)
+    }
+
+    .nav-cta {
+      background: var(--gold);
+      color: var(--white) !important;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: 600 !important;
+      box-shadow: 0 3px 14px rgba(200, 150, 26, .4)
+    }
+
+    .nav-cta::after {
+      display: none
+    }
+
+    .nav-cta:hover {
+      background: var(--gold-light) !important;
+      transform: translateY(-1px)
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: var(--transition)
+    }
+
+    #navbar.scrolled .hamburger span {
+      background: var(--text-dark)
+    }
+
+    /* ===== MOBILE MENU ===== */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 55, 35, .98);
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px
+    }
+
+    .mobile-menu.open {
+      display: flex
+    }
+
+    .mobile-menu a {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: var(--white);
+      transition: var(--transition)
+    }
+
+    .mobile-menu a:hover {
+      color: var(--gold-light)
+    }
+
+    .mobile-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 1.5rem;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    /* ===== HERO ===== */
+    #hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 0
+    }
+
+    /* Hero Carousel */
+    .hero-carousel {
+      position: absolute;
+      inset: 0;
+      overflow: hidden
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1.4s ease, transform 8s ease;
+      transform: scale(1.06)
+    }
+
+    .hero-slide.active {
+      opacity: 1;
+      transform: scale(1.0)
+    }
+
+    .hero-slide:nth-child(1) {
+      background-image: url('assets/images/church_hero.jpg')
+    }
+
+    .hero-slide:nth-child(2) {
+      background-image: url('assets/images/church_hero2.jpg')
+    }
+
+    .hero-slide:nth-child(3) {
+      background-image: url('assets/images/church_worship.jpg')
+    }
+
+    .hero-slide:nth-child(4) {
+      background-image: url('assets/images/church_worship1.jpg')
+    }
+
+    .hero-dots {
+      position: absolute;
+      bottom: 90px;
+      right: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 3
+    }
+
+    .hero-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .4);
+      border: none;
+      cursor: pointer;
+      transition: all .3s ease;
+      padding: 0
+    }
+
+    .hero-dot.active {
+      background: var(--gold-light);
+      transform: scale(1.4)
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(20, 55, 35, .84) 0%, rgba(30, 84, 56, .76) 50%, rgba(50, 30, 10, .66) 100%)
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+      padding-top: 100px
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200, 150, 26, .2);
+      border: 1px solid rgba(200, 150, 26, .5);
+      backdrop-filter: blur(10px);
+      color: var(--gold-light);
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border-radius: 50px;
+      margin-bottom: 28px;
+      animation: fadeUp .8s ease both
+    }
+
+    .hero-title {
+      font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 12px;
+      animation: fadeUp .8s ease .1s both
+    }
+
+    .hero-title .highlight {
+      color: var(--gold-light);
+      font-style: italic
+    }
+
+    .hero-location {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, .7);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      animation: fadeUp .8s ease .2s both
+    }
+
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+      font-style: italic;
+      color: rgba(255, 255, 255, .88);
+      line-height: 1.6;
+      max-width: 600px;
+      margin-bottom: 44px;
+      animation: fadeUp .8s ease .3s both
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      animation: fadeUp .8s ease .4s both
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 36px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, .6);
+      font-size: .72rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      z-index: 2;
+      animation: fadeIn 1.5s ease 1s both
+    }
+
+    .scroll-dot {
+      width: 2px;
+      height: 36px;
+      background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, .6));
+      animation: scrollBounce 1.5s ease-in-out infinite
+    }
+
+    @keyframes scrollBounce {
+
+      0%,
+      100% {
+        transform: scaleY(1) translateY(0)
+      }
+
+      50% {
+        transform: scaleY(.6) translateY(4px)
+      }
+    }
+
+    /* ===== SERVICE TIMES ===== */
+    #service-times {
+      background: var(--green-dark);
+      padding: 0
+    }
+
+    .service-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
+    }
+
+    .service-item {
+      padding: 34px 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-right: 1px solid rgba(255, 255, 255, .1);
+      transition: var(--transition)
+    }
+
+    .service-item:last-child {
+      border-right: none
+    }
+
+    .service-item:hover {
+      background: rgba(255, 255, 255, .05)
+    }
+
+    .service-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      background: rgba(200, 150, 26, .2);
+      border: 1px solid rgba(200, 150, 26, .35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--gold-light);
+      font-size: 1.2rem
+    }
+
+    .service-info .day {
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 3px
+    }
+
+    .service-info .service-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--white);
+      margin-bottom: 2px
+    }
+
+    .service-info .time {
+      font-size: .83rem;
+      color: rgba(255, 255, 255, .65)
+    }
+
+    /* ===== LIVE STREAM ===== */
+    #livestream {
+      background: var(--text-dark);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden
+    }
+
+    #livestream::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(200, 150, 26, .05)
+    }
+
+    .live-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: center
+    }
+
+    .live-video-wrap {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, .5)
+    }
+
+    .live-video-inner {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0
+    }
+
+    .live-video-inner iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none
+    }
+
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(220, 50, 50, .9);
+      color: var(--white);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 7px 16px;
+      border-radius: 50px;
+      margin-bottom: 20px
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--white);
+      animation: livePulse 1.2s ease-in-out infinite
+    }
+
+    @keyframes livePulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1)
+      }
+
+      50% {
+        opacity: .5;
+        transform: scale(.8)
+      }
+    }
+
+    .live-content .section-label {
+      color: var(--gold-light)
+    }
+
+    .live-content .section-title {
+      color: var(--white)
+    }
+
+    .live-content p {
+      color: rgba(255, 255, 255, .7);
+      line-height: 1.7;
+      margin-bottom: 28px
+    }
+
+    .countdown-wrap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 32px
+    }
+
+    .countdown-box {
+      background: rgba(255, 255, 255, .07);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: var(--radius);
+      padding: 18px 12px;
+      text-align: center;
+      backdrop-filter: blur(6px)
+    }
+
+    .countdown-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      line-height: 1;
+      display: block
+    }
+
+    .countdown-label {
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .5);
+      margin-top: 4px;
+      display: block
+    }
+
+    /* ===== FIRST TIMER ===== */
+    #first-timer {
+      background: var(--cream)
+    }
+
+    .ft-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 72px;
+      align-items: center
+    }
+
+    .ft-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-top: 36px
+    }
+
+    .ft-step {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start
+    }
+
+    .ft-num {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 14px rgba(200, 150, 26, .3)
+    }
+
+    .ft-step-content h4 {
+      font-size: 1rem;
+      color: var(--green-dark);
+      margin-bottom: 4px
+    }
+
+    .ft-step-content p {
+      font-size: .88rem;
+      color: var(--text-mid);
+      line-height: 1.6
+    }
+
+    .ft-img-stack {
+      position: relative
+    }
+
+    .ft-img-main {
+      border-radius: var(--radius-lg);
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      box-shadow: var(--shadow-lg)
+    }
+
+    .ft-card {
+      position: absolute;
+      bottom: -24px;
+      left: -24px;
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 230px
+    }
+
+    .ft-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--green-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green-primary);
+      font-size: 1.2rem;
+      flex-shrink: 0
+    }
+
+    .ft-card .label {
+      font-size: .82rem;
+      color: var(--text-mid);
+      line-height: 1.4
+    }
+
+    .ft-card strong {
+      display: block;
+      color: var(--green-dark);
+      margin-bottom: 2px
+    }
+
+    /* ===== ABOUT ===== */
+    #about {
+      background: var(--green-pale)
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center
+    }
+
+    .about-img-wrap {
+      position: relative
+    }
+
+    .about-img-main {
+      border-radius: var(--radius-lg);
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      box-shadow: var(--shadow-lg)
+    }
+
+    .about-img-card {
+      position: absolute;
+      bottom: -28px;
+      right: -28px;
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 220px
+    }
+
+    .about-img-card .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--green-primary);
+      line-height: 1
+    }
+
+    .about-img-card .num span {
+      font-size: 1.4rem;
+      color: var(--gold)
+    }
+
+    .about-img-card .label {
+      font-size: .82rem;
+      color: var(--text-light);
+      line-height: 1.4
+    }
+
+    .about-decor {
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      width: 100px;
+      height: 100px;
+      border: 3px solid var(--gold);
+      border-radius: var(--radius);
+      opacity: .25
+    }
+
+    .about-content .values {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 36px
+    }
+
+    .value-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px;
+      border-left: 3px solid var(--green-primary);
+      transition: var(--transition)
+    }
+
+    .value-card:hover {
+      background: var(--green-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm)
+    }
+
+    .value-card i {
+      color: var(--green-primary);
+      font-size: 1.3rem;
+      margin-bottom: 10px
+    }
+
+    .value-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--green-dark);
+      margin-bottom: 4px
+    }
+
+    .value-card p {
+      font-size: .83rem;
+      color: var(--text-mid);
+      line-height: 1.5
+    }
+
+    /* ===== PASTORAL TEAM ===== */
+    #pastoral-team {
+      background: var(--cream)
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 52px
+    }
+
+    .team-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      text-align: center
+    }
+
+    .team-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md)
+    }
+
+    .team-photo {
+      position: relative;
+      height: 280px;
+      overflow: hidden
+    }
+
+    .team-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      transition: var(--transition)
+    }
+
+    .team-card:hover .team-photo img {
+      transform: scale(1.04)
+    }
+
+    .team-photo-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(30, 84, 56, .7) 0%, transparent 50%)
+    }
+
+    .team-socials {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+      display: flex;
+      gap: 8px;
+      opacity: 0;
+      transition: var(--transition)
+    }
+
+    .team-card:hover .team-socials {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0)
+    }
+
+    .team-social-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green-dark);
+      font-size: .85rem;
+      transition: var(--transition)
+    }
+
+    .team-social-btn:hover {
+      background: var(--gold);
+      color: var(--white)
+    }
+
+    .team-info {
+      padding: 24px
+    }
+
+    .team-info h3 {
+      font-size: 1.15rem;
+      color: var(--green-dark);
+      margin-bottom: 4px
+    }
+
+    .team-info .role {
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px
+    }
+
+    .team-info p {
+      font-size: .85rem;
+      color: var(--text-mid);
+      line-height: 1.6
+    }
+
+    /* ===== MINISTRIES ===== */
+    #ministries {
+      background: var(--green-pale)
+    }
+
+    .ministries-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 52px
+    }
+
+    .ministry-card {
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      text-align: center;
+      transition: var(--transition);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden
+    }
+
+    .ministry-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: var(--radius-lg);
+      opacity: 0;
+      transition: var(--transition)
+    }
+
+    .ministry-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md)
+    }
+
+    .ministry-card:hover::before {
+      opacity: 1
+    }
+
+    .mc-1 {
+      background: var(--white)
+    }
+
+    .mc-2 {
+      background: #fff8f0
+    }
+
+    .mc-3 {
+      background: #f0f4ff
+    }
+
+    .mc-4 {
+      background: #fff0f0
+    }
+
+    .mc-5 {
+      background: #f0fff4
+    }
+
+    .mc-6 {
+      background: #fffbf0
+    }
+
+    .ministry-icon {
+      width: 68px;
+      height: 68px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin: 0 auto 20px;
+      transition: var(--transition)
+    }
+
+    .mi-1 {
+      background: var(--green-light);
+      color: var(--green-primary)
+    }
+
+    .mi-2 {
+      background: #fdebd0;
+      color: #e67e22
+    }
+
+    .mi-3 {
+      background: #eaf0ff;
+      color: #2e4fac
+    }
+
+    .mi-4 {
+      background: #fce8e4;
+      color: var(--coral)
+    }
+
+    .mi-5 {
+      background: #e0fff0;
+      color: #16a085
+    }
+
+    .mi-6 {
+      background: #fef9e7;
+      color: var(--gold)
+    }
+
+    .ministry-card:hover .ministry-icon {
+      transform: scale(1.1) rotate(-3deg)
+    }
+
+    .ministry-card h3 {
+      font-size: 1.05rem;
+      color: var(--green-dark);
+      margin-bottom: 8px
+    }
+
+    .ministry-card p {
+      font-size: .85rem;
+      color: var(--text-mid);
+      line-height: 1.6
+    }
+
+    /* ===== SERMONS ===== */
+    #sermons {
+      background: var(--cream-dark)
+    }
+
+    .sermons-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 52px;
+      flex-wrap: wrap;
+      gap: 20px
+    }
+
+    .featured-sermon {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 40px
+    }
+
+    .featured-sermon-inner {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr
+    }
+
+    .sermon-video-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden
+    }
+
+    .sermon-video-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none
+    }
+
+    .featured-sermon-info {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center
+    }
+
+    .sermon-tag {
+      display: inline-block;
+      background: var(--green-light);
+      color: var(--green-primary);
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 50px;
+      margin-bottom: 16px
+    }
+
+    .featured-sermon-info h3 {
+      font-size: 1.6rem;
+      color: var(--green-dark);
+      margin-bottom: 12px;
+      line-height: 1.3
+    }
+
+    .sermon-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 20px
+    }
+
+    .sermon-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .82rem;
+      color: var(--text-light)
+    }
+
+    .sermon-meta i {
+      color: var(--gold)
+    }
+
+    .sermon-scripture {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--green-primary);
+      padding: 14px 18px;
+      background: var(--green-pale);
+      border-left: 3px solid var(--green-primary);
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 24px
+    }
+
+    .sermon-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px
+    }
+
+    .sermon-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      cursor: pointer
+    }
+
+    .sermon-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md)
+    }
+
+    .sermon-card-thumb {
+      position: relative;
+      padding-bottom: 56.25%;
+      background: var(--green-dark);
+      overflow: hidden
+    }
+
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(200, 150, 26, .9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1rem;
+      transition: var(--transition);
+      z-index: 2
+    }
+
+    .sermon-card:hover .play-btn {
+      background: var(--gold);
+      transform: translate(-50%, -50%) scale(1.1)
+    }
+
+    .sermon-card-body {
+      padding: 20px
+    }
+
+    .sermon-card-body .date {
+      font-size: .75rem;
+      color: var(--gold);
+      font-weight: 600;
+      letter-spacing: .08em;
+      margin-bottom: 8px
+    }
+
+    .sermon-card-body h4 {
+      font-size: 1rem;
+      color: var(--green-dark);
+      line-height: 1.4;
+      margin-bottom: 8px
+    }
+
+    .sermon-card-body .preacher {
+      font-size: .8rem;
+      color: var(--text-light);
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
+
+    /* ===== PHOTO CAROUSEL ===== */
+    #photo-carousel {
+      background: var(--text-dark);
+      padding: 80px 0;
+      overflow: hidden
+    }
+
+    #photo-carousel .section-title {
+      color: var(--white)
+    }
+
+    #photo-carousel .section-label {
+      color: var(--gold-light)
+    }
+
+    #photo-carousel .section-subtitle {
+      color: rgba(255, 255, 255, .65)
+    }
+
+    .pcarousel-wrap {
+      position: relative;
+      margin-top: 52px;
+      overflow: hidden
+    }
+
+    .pcarousel-track {
+      display: flex;
+      gap: 20px;
+      transition: transform .6s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    .pcarousel-slide {
+      min-width: calc(33.333% - 14px);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+      flex-shrink: 0
+    }
+
+    .pcarousel-slide img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      display: block;
+      transition: transform .5s ease
+    }
+
+    .pcarousel-slide:hover img {
+      transform: scale(1.05)
+    }
+
+    .pcarousel-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 28px 22px 22px;
+      background: linear-gradient(transparent, rgba(20, 55, 35, .85));
+      color: var(--white)
+    }
+
+    .pcarousel-caption h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      margin-bottom: 4px
+    }
+
+    .pcarousel-caption p {
+      font-size: .8rem;
+      color: rgba(255, 255, 255, .75)
+    }
+
+    .pcarousel-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 32px
+    }
+
+    .pcarousel-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .25);
+      color: var(--white);
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition)
+    }
+
+    .pcarousel-btn:hover {
+      background: var(--gold);
+      border-color: var(--gold)
+    }
+
+    .pcarousel-dots {
+      display: flex;
+      gap: 8px;
+      align-items: center
+    }
+
+    .pcarousel-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .3);
+      border: none;
+      cursor: pointer;
+      transition: all .3s;
+      padding: 0
+    }
+
+    .pcarousel-dot.active {
+      background: var(--gold-light);
+      transform: scale(1.4)
+    }
+
+    /* ===== TESTIMONIES ===== */
+    #testimonies {
+      background: var(--white)
+    }
+
+    .testimonies-track {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 52px
+    }
+
+    .testimony-card {
+      background: var(--cream);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      position: relative;
+      transition: var(--transition)
+    }
+
+    .testimony-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      background: var(--white)
+    }
+
+    .testimony-quote {
+      font-size: 3rem;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 12px;
+      font-family: 'Playfair Display', serif;
+      opacity: .5
+    }
+
+    .testimony-card p {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--text-mid);
+      line-height: 1.7;
+      margin-bottom: 24px
+    }
+
+    .testimony-author {
+      display: flex;
+      align-items: center;
+      gap: 14px
+    }
+
+    .testimony-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0
+    }
+
+    .ta-1 {
+      background: linear-gradient(135deg, var(--green-primary), var(--green-dark))
+    }
+
+    .ta-2 {
+      background: linear-gradient(135deg, var(--gold), #a06b0d)
+    }
+
+    .ta-3 {
+      background: linear-gradient(135deg, var(--coral), #a03a1f)
+    }
+
+    .testimony-name {
+      font-weight: 600;
+      font-size: .9rem;
+      color: var(--green-dark)
+    }
+
+    .testimony-role {
+      font-size: .78rem;
+      color: var(--text-light);
+      margin-top: 2px
+    }
+
+    .stars {
+      color: var(--gold);
+      font-size: .85rem;
+      margin-top: 4px
+    }
+
+    /* ===== EVENTS ===== */
+    #events {
+      background: var(--green-pale)
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 52px
+    }
+
+    .event-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column
+    }
+
+    .event-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md)
+    }
+
+    .event-card-header {
+      padding: 28px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between
+    }
+
+    .event-date-badge {
+      background: var(--gold);
+      color: var(--white);
+      border-radius: 10px;
+      padding: 10px 14px;
+      text-align: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 14px rgba(200, 150, 26, .35)
+    }
+
+    .event-date-badge .day {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1
+    }
+
+    .event-date-badge .month {
+      display: block;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase
+    }
+
+    .event-type {
+      display: inline-block;
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 50px
+    }
+
+    .type-service {
+      background: var(--green-light);
+      color: var(--green-primary)
+    }
+
+    .type-special {
+      background: #fdf6e3;
+      color: var(--gold)
+    }
+
+    .type-youth {
+      background: #fce8e4;
+      color: var(--coral)
+    }
+
+    .event-body {
+      padding: 0 28px 28px;
+      flex: 1
+    }
+
+    .event-body h3 {
+      font-size: 1.2rem;
+      color: var(--green-dark);
+      margin-bottom: 10px;
+      line-height: 1.4
+    }
+
+    .event-body p {
+      font-size: .88rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+      margin-bottom: 18px
+    }
+
+    .event-details {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      border-top: 1px solid var(--cream-dark);
+      padding-top: 16px
+    }
+
+    .event-detail {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: .82rem;
+      color: var(--text-light)
+    }
+
+    .event-detail i {
+      color: var(--green-primary);
+      width: 16px
+    }
+
+    /* ===== GALLERY ===== */
+    #gallery {
+      background: var(--text-dark);
+      padding: 80px 0
+    }
+
+    #gallery .section-title {
+      color: var(--white)
+    }
+
+    #gallery .section-label {
+      color: var(--gold-light)
+    }
+
+    #gallery .section-subtitle {
+      color: rgba(255, 255, 255, .65)
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      gap: 16px;
+      margin-top: 48px
+    }
+
+    .gallery-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer
+    }
+
+    .gallery-item:first-child {
+      grid-column: span 2;
+      grid-row: span 2
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      min-height: 220px;
+      object-fit: cover;
+      transition: var(--transition) .1s
+    }
+
+    .gallery-item:first-child .gallery-img {
+      min-height: 440px
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(30, 84, 56, .0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition)
+    }
+
+    .gallery-overlay i {
+      color: var(--white);
+      font-size: 2rem;
+      opacity: 0;
+      transform: scale(.7);
+      transition: var(--transition)
+    }
+
+    .gallery-item:hover .gallery-img {
+      transform: scale(1.06)
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      background: rgba(30, 84, 56, .55)
+    }
+
+    .gallery-item:hover .gallery-overlay i {
+      opacity: 1;
+      transform: scale(1)
+    }
+
+    /* Lightbox */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(0, 0, 0, .92);
+      align-items: center;
+      justify-content: center;
+      padding: 24px
+    }
+
+    #lightbox.open {
+      display: flex
+    }
+
+    #lightbox img {
+      max-width: 90vw;
+      max-height: 88vh;
+      border-radius: var(--radius);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, .6);
+      object-fit: contain
+    }
+
+    #lb-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, .1);
+      border: none;
+      color: var(--white);
+      font-size: 1.5rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition)
+    }
+
+    #lb-close:hover {
+      background: rgba(255, 255, 255, .25)
+    }
+
+    /* ===== PRAYER REQUEST ===== */
+    #prayer {
+      background: var(--cream)
+    }
+
+    .prayer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start
+    }
+
+    .prayer-intro .big-verse {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-style: italic;
+      color: var(--green-primary);
+      line-height: 1.5;
+      padding: 24px;
+      background: var(--green-pale);
+      border-radius: var(--radius);
+      border-left: 4px solid var(--green-primary);
+      margin: 28px 0
+    }
+
+    .prayer-promises {
+      display: flex;
+      flex-direction: column;
+      gap: 14px
+    }
+
+    .prayer-promise {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--white);
+      padding: 18px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm)
+    }
+
+    .prayer-promise i {
+      color: var(--gold);
+      font-size: 1.1rem;
+      margin-top: 2px;
+      flex-shrink: 0
+    }
+
+    .prayer-promise p {
+      font-size: .88rem;
+      color: var(--text-mid);
+      line-height: 1.6
+    }
+
+    .prayer-form-wrap {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-md)
+    }
+
+    .prayer-form-wrap h3 {
+      font-size: 1.5rem;
+      color: var(--green-dark);
+      margin-bottom: 6px
+    }
+
+    .prayer-form-wrap>p {
+      font-size: .9rem;
+      color: var(--text-light);
+      margin-bottom: 28px
+    }
+
+    .form-group {
+      margin-bottom: 18px
+    }
+
+    .form-group label {
+      display: block;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 7px
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid var(--cream-dark);
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: .9rem;
+      color: var(--text-dark);
+      background: var(--cream);
+      transition: var(--transition);
+      outline: none;
+      appearance: none
+    }
+
+    .form-control:focus {
+      border-color: var(--green-primary);
+      background: var(--white);
+      box-shadow: 0 0 0 3px rgba(45, 122, 82, .12)
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 120px
+    }
+
+    .privacy-note {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: .78rem;
+      color: var(--text-light);
+      margin-top: 14px;
+      line-height: 1.5
+    }
+
+    .privacy-note i {
+      color: var(--green-primary);
+      margin-top: 2px;
+      flex-shrink: 0
+    }
+
+    /* ===== GIVE ===== */
+    #give {
+      background: linear-gradient(135deg, var(--green-dark) 0%, #0f3d25 100%);
+      position: relative;
+      overflow: hidden
+    }
+
+    #give::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: rgba(200, 150, 26, .06)
+    }
+
+    #give::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -80px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(200, 150, 26, .04)
+    }
+
+    .give-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      position: relative;
+      z-index: 1
+    }
+
+    .give-content .section-label {
+      color: var(--gold-light)
+    }
+
+    .give-content .section-title {
+      color: var(--white)
+    }
+
+    .give-content .section-subtitle {
+      color: rgba(255, 255, 255, .75)
+    }
+
+    .give-verse {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, .7);
+      line-height: 1.6;
+      margin: 28px 0;
+      padding: 18px 24px;
+      border-left: 3px solid var(--gold)
+    }
+
+    .give-img {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, .4)
+    }
+
+    .give-img img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover
+    }
+
+    .bank-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 28px
+    }
+
+    .bank-card {
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      backdrop-filter: blur(10px);
+      transition: var(--transition)
+    }
+
+    .bank-card:hover {
+      background: rgba(255, 255, 255, .13)
+    }
+
+    .bank-card i {
+      font-size: 1.4rem;
+      color: var(--gold-light);
+      width: 24px
+    }
+
+    .bank-card .bank-name {
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--gold-light)
+    }
+
+    .bank-card .account-num {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--white);
+      font-family: 'Inter', monospace;
+      letter-spacing: .05em
+    }
+
+    .bank-card .account-name {
+      font-size: .82rem;
+      color: rgba(255, 255, 255, .6)
+    }
+
+    /* ===== BAPTISM & MEMBERSHIP ===== */
+    #membership {
+      background: var(--cream-dark)
+    }
+
+    .membership-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      margin-top: 52px
+    }
+
+    .mem-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition)
+    }
+
+    .mem-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md)
+    }
+
+    .mem-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 20px
+    }
+
+    .mi-baptism {
+      background: linear-gradient(135deg, #e8f5fe, #c8e6fb);
+      color: #1a6ea8
+    }
+
+    .mi-membership {
+      background: linear-gradient(135deg, var(--green-light), #c5e8d5);
+      color: var(--green-primary)
+    }
+
+    .mem-card h3 {
+      font-size: 1.3rem;
+      color: var(--green-dark);
+      margin-bottom: 12px
+    }
+
+    .mem-card p {
+      font-size: .9rem;
+      color: var(--text-mid);
+      line-height: 1.7;
+      margin-bottom: 20px
+    }
+
+    .mem-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+
+    .mem-step {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: .85rem;
+      color: var(--text-mid)
+    }
+
+    .mem-step i {
+      color: var(--green-primary);
+      width: 18px
+    }
+
+    /* ===== NEWSLETTER ===== */
+    #newsletter {
+      background: linear-gradient(135deg, var(--gold), #a06b0d);
+      padding: 72px 0;
+      position: relative;
+      overflow: hidden
+    }
+
+    #newsletter::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .08)
+    }
+
+    #newsletter::after {
+      content: '';
+      position: absolute;
+      bottom: -40px;
+      left: -40px;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .06)
+    }
+
+    .newsletter-inner {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1
+    }
+
+    .newsletter-text .section-label {
+      color: rgba(255, 255, 255, .7)
+    }
+
+    .newsletter-text .section-label::before,
+    .newsletter-text .section-label::after {
+      background: linear-gradient(to right, transparent, rgba(255, 255, 255, .5), transparent)
+    }
+
+    .newsletter-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      color: var(--white);
+      margin-bottom: 12px
+    }
+
+    .newsletter-text p {
+      color: rgba(255, 255, 255, .82);
+      font-size: 1rem;
+      line-height: 1.7
+    }
+
+    .newsletter-channels {
+      display: flex;
+      flex-direction: column;
+      gap: 14px
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 10px
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 14px 18px;
+      border: none;
+      border-radius: 50px;
+      font-family: 'Inter', sans-serif;
+      font-size: .9rem;
+      outline: none;
+      background: rgba(255, 255, 255, .95)
+    }
+
+    .newsletter-form input::placeholder {
+      color: var(--text-light)
+    }
+
+    .newsletter-form button {
+      background: var(--green-dark);
+      color: var(--white);
+      border: none;
+      padding: 14px 24px;
+      border-radius: 50px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: .88rem;
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap
+    }
+
+    .newsletter-form button:hover {
+      background: #0f3d25;
+      transform: translateY(-1px)
+    }
+
+    .wa-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255, 255, 255, .15);
+      border: 1px solid rgba(255, 255, 255, .3);
+      color: var(--white);
+      padding: 14px 20px;
+      border-radius: 50px;
+      font-size: .9rem;
+      font-weight: 600;
+      transition: var(--transition);
+      cursor: pointer;
+      backdrop-filter: blur(8px)
+    }
+
+    .wa-btn i {
+      font-size: 1.2rem;
+      color: #25d366
+    }
+
+    .wa-btn:hover {
+      background: rgba(255, 255, 255, .22);
+      transform: translateY(-2px)
+    }
+
+    /* ===== CONTACT ===== */
+    #contact {
+      background: var(--white)
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 60px;
+      align-items: start
+    }
+
+    .contact-info-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 36px
+    }
+
+    .contact-card {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition)
+    }
+
+    .contact-card:hover {
+      transform: translateX(6px);
+      box-shadow: var(--shadow-md)
+    }
+
+    .contact-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--green-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green-primary);
+      font-size: 1.1rem;
+      flex-shrink: 0
+    }
+
+    .contact-card h4 {
+      font-size: .76rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 4px
+    }
+
+    .contact-card p {
+      font-size: .88rem;
+      color: var(--text-mid);
+      line-height: 1.5
+    }
+
+    .contact-card a {
+      color: var(--green-primary);
+      font-weight: 500;
+      transition: var(--transition)
+    }
+
+    .contact-card a:hover {
+      color: var(--gold)
+    }
+
+    .contact-form-wrap {
+      background: var(--cream);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-md)
+    }
+
+    .contact-form-wrap h3 {
+      font-size: 1.5rem;
+      color: var(--green-dark);
+      margin-bottom: 6px
+    }
+
+    .contact-form-wrap>p {
+      font-size: .9rem;
+      color: var(--text-light);
+      margin-bottom: 28px
+    }
+
+    .map-embed {
+      margin-top: 28px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm)
+    }
+
+    .map-embed iframe {
+      width: 100%;
+      height: 240px;
+      border: none;
+      display: block
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--text-dark);
+      color: rgba(255, 255, 255, .8)
+    }
+
+    .footer-top {
+      padding: 70px 0 50px
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr 1fr 1.2fr;
+      gap: 44px
+    }
+
+    .footer-brand .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px
+    }
+
+    .footer-brand .brand-badge {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green-primary);
+      border: 2px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .footer-brand .brand-badge svg {
+      width: 24px;
+      height: 24px
+    }
+
+    .footer-brand .brand-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--white);
+      line-height: 1.3
+    }
+
+    .footer-brand p {
+      font-size: .875rem;
+      line-height: 1.7;
+      margin-bottom: 22px;
+      color: rgba(255, 255, 255, .6)
+    }
+
+    .social-links {
+      display: flex;
+      gap: 10px
+    }
+
+    .social-link {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, .7);
+      font-size: .9rem;
+      transition: var(--transition)
+    }
+
+    .social-link:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--white);
+      transform: translateY(-3px)
+    }
+
+    .footer-col h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--white);
+      margin-bottom: 18px;
+      position: relative;
+      padding-bottom: 12px
+    }
+
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 34px;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 1px
+    }
+
+    .footer-col ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+
+    .footer-col ul li a {
+      font-size: .875rem;
+      color: rgba(255, 255, 255, .6);
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--gold-light);
+      transform: translateX(4px)
+    }
+
+    .footer-col ul li a i {
+      font-size: .7rem;
+      color: var(--gold)
+    }
+
+    .footer-service {
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .footer-service-item {
+      background: rgba(255, 255, 255, .05);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: .82rem
+    }
+
+    .footer-service-item .fsday {
+      color: var(--gold-light);
+      font-weight: 600;
+      font-size: .76rem;
+      text-transform: uppercase;
+      letter-spacing: .08em
+    }
+
+    .footer-service-item .fstime {
+      color: rgba(255, 255, 255, .7)
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      padding: 22px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px
+    }
+
+    .footer-bottom p {
+      font-size: .8rem;
+      color: rgba(255, 255, 255, .4)
+    }
+
+    .footer-bottom a {
+      color: var(--gold-light);
+      transition: var(--transition)
+    }
+
+    .footer-bottom a:hover {
+      color: var(--white)
+    }
+
+    /* ===== BACK TO TOP ===== */
+    #back-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green-primary);
+      color: var(--white);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      box-shadow: 0 4px 20px rgba(45, 122, 82, .4);
+      z-index: 500;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: var(--transition)
+    }
+
+    #back-top.visible {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    #back-top:hover {
+      background: var(--green-dark);
+      transform: translateY(-3px)
+    }
+
+    /* ===== COOKIE BANNER ===== */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(26, 46, 34, .97);
+      backdrop-filter: blur(12px);
+      padding: 18px 24px;
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(200, 150, 26, .3);
+      transform: translateY(100%);
+      transition: transform .4s ease
+    }
+
+    #cookie-banner.show {
+      transform: translateY(0)
+    }
+
+    #cookie-banner p {
+      font-size: .85rem;
+      color: rgba(255, 255, 255, .8);
+      line-height: 1.5;
+      flex: 1;
+      min-width: 200px
+    }
+
+    #cookie-banner a {
+      color: var(--gold-light);
+      border-bottom: 1px solid var(--gold-light)
+    }
+
+    .cookie-btns {
+      display: flex;
+      gap: 10px;
+      flex-shrink: 0
+    }
+
+    #accept-cookies {
+      background: var(--gold);
+      color: var(--white);
+      border: none;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: .85rem;
+      cursor: pointer;
+      transition: var(--transition)
+    }
+
+    #accept-cookies:hover {
+      background: var(--gold-light)
+    }
+
+    #decline-cookies {
+      background: transparent;
+      color: rgba(255, 255, 255, .6);
+      border: 1px solid rgba(255, 255, 255, .2);
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-family: 'Inter', sans-serif;
+      font-size: .85rem;
+      cursor: pointer;
+      transition: var(--transition)
+    }
+
+    #decline-cookies:hover {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, .4)
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity .7s ease, transform .7s ease
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    .reveal-delay-1 {
+      transition-delay: .1s
+    }
+
+    .reveal-delay-2 {
+      transition-delay: .2s
+    }
+
+    .reveal-delay-3 {
+      transition-delay: .3s
+    }
+
+    .reveal-delay-4 {
+      transition-delay: .4s
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:1024px) {
+
+      .about-grid,
+      .give-grid,
+      .contact-grid,
+      .newsletter-inner,
+      .prayer-grid,
+      .ft-grid {
+        grid-template-columns: 1fr;
+        gap: 48px
+      }
+
+      .about-img-main,
+      .ft-img-main {
+        height: 360px
+      }
+
+      .give-img img {
+        height: 320px
+      }
+
+      .live-grid {
+        grid-template-columns: 1fr
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .membership-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media(max-width:768px) {
+      .nav-links {
+        display: none
+      }
+
+      .hamburger {
+        display: flex
+      }
+
+      .hero-title {
+        font-size: 2.8rem
+      }
+
+      .featured-sermon-inner {
+        grid-template-columns: 1fr
+      }
+
+      .sermon-cards {
+        grid-template-columns: 1fr
+      }
+
+      .events-grid,
+      .gallery-grid,
+      .testimonies-track,
+      .ministries-grid {
+        grid-template-columns: 1fr
+      }
+
+      .gallery-item:first-child {
+        grid-column: span 1;
+        grid-row: span 1
+      }
+
+      .gallery-item:first-child .gallery-img {
+        min-height: 220px
+      }
+
+      .service-strip {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr
+      }
+
+      .contact-form-wrap,
+      .prayer-form-wrap {
+        padding: 24px
+      }
+
+      .form-row {
+        grid-template-columns: 1fr
+      }
+
+      section {
+        padding: 64px 0
+      }
+
+      .about-content .values {
+        grid-template-columns: 1fr
+      }
+
+      .countdown-wrap {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .newsletter-form {
+        flex-direction: column
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media(max-width:480px) {
+      .hero-title {
+        font-size: 2.2rem
+      }
+
+      .hero-cta {
+        flex-direction: column
+      }
+
+      .service-strip {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==================== ANNOUNCEMENT BAR ==================== -->
+  <div id="announce-bar">
+    <p>
+      <i class="fas fa-star" style="color:var(--gold-light)"></i>
+      <strong>This Sunday:</strong> Thanksgiving &amp; Praise Service — Join us at <strong>7:00 AM &amp; 9:30
+        AM</strong> ·
+      <a href="#events">See all upcoming events →</a>
+    </p>
+    <button id="close-announce" aria-label="Close announcement"><i class="fas fa-times"></i></button>
+  </div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-badge">
+          <img src="assets/images/church_logo.png" alt="The First Baptist Church Logo" class="church-logo"
+            style="width: 100px; height: auto; margin-right: px;" onerror="this.style.display='none'">
+        </div>
+        <div class="nav-logo-text">
+          <div class="name">The First Baptist Church</div>
+          <div class="tagline">A Glorious Church · Lagos</div>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#pastoral-team">Leadership</a></li>
+        <li><a href="#sermons">Sermons</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#give">Give</a></li>
+        <li><a href="#prayer">Prayer</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#first-timer" class="nav-cta">Plan a Visit</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close"><i class="fas fa-times"></i></button>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#pastoral-team" class="mobile-link">Leadership</a>
+    <a href="#sermons" class="mobile-link">Sermons</a>
+    <a href="#events" class="mobile-link">Events</a>
+    <a href="#ministries" class="mobile-link">Ministries</a>
+    <a href="#give" class="mobile-link">Give</a>
+    <a href="#prayer" class="mobile-link">Prayer Request</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#first-timer" class="btn btn-primary mobile-link" style="font-size:1rem">Plan a Visit</a>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero">
+    <!-- Hero Background Carousel -->
+    <div class="hero-carousel" id="heroCarousel">
+      <div class="hero-slide active"></div>
+      <div class="hero-slide"></div>
+      <div class="hero-slide"></div>
+      <div class="hero-slide"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <!-- Carousel dots -->
+    <div class="hero-dots" role="tablist" aria-label="Hero slides">
+      <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+      <button class="hero-dot" data-slide="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fas fa-cross"></i> Welcome to TFBC Lagos</div>
+      <h1 class="hero-title">The First Baptist<br /><span class="highlight">Church, Lagos</span></h1>
+      <p class="hero-location"><i class="fas fa-map-marker-alt" style="margin-right:6px"></i>Lagos, Nigeria</p>
+      <p class="hero-tagline">A glorious church where faith, fellowship, &amp; family are cherished, nourished, and
+        allowed to flourish.</p>
+      <div class="hero-cta">
+        <a href="#first-timer" class="btn btn-primary" id="hero-visit-btn"><i class="fas fa-church"></i> Plan Your
+          Visit</a>
+        <a href="#livestream" class="btn btn-outline" id="hero-live-btn"><i class="fas fa-circle"
+            style="color:#ff4444;font-size:.7rem"></i> Watch Live</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-dot"></div><span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICE TIMES ==================== -->
+  <div id="service-times">
+    <div class="service-strip">
+      <div class="service-item">
+        <div class="service-icon"><i class="fas fa-sun"></i></div>
+        <div class="service-info">
+          <div class="day">Sunday</div>
+          <div class="service-name">First Service</div>
+          <div class="time">7:00 AM – 9:00 AM</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon"><i class="fas fa-church"></i></div>
+        <div class="service-info">
+          <div class="day">Sunday</div>
+          <div class="service-name">Second Service</div>
+          <div class="time">9:30 AM – 12:00 PM</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon"><i class="fas fa-bible"></i></div>
+        <div class="service-info">
+          <div class="day">Wednesday</div>
+          <div class="service-name">Midweek Service</div>
+          <div class="time">6:00 PM – 8:00 PM</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon"><i class="fas fa-praying-hands"></i></div>
+        <div class="service-info">
+          <div class="day">Friday</div>
+          <div class="service-name">Prayer Night</div>
+          <div class="time">9:00 PM – 11:00 PM</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== LIVE STREAM ==================== -->
+  <section id="livestream">
+    <div class="container">
+      <div class="live-grid">
+        <div class="live-video-wrap reveal">
+          <div class="live-video-inner">
+            <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=thefirstbaptistchurchlagos"
+              title="TFBC Lagos Live Stream"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="live-content reveal reveal-delay-1">
+          <div class="live-badge">
+            <div class="live-dot"></div> Live Every Sunday
+          </div>
+          <div class="section-label">Watch Online</div>
+          <h2 class="section-title" style="color:var(--white)">Join Us <em style="color:var(--gold-light)">Live</em>
+            from Anywhere</h2>
+          <p>Can't make it in person? You can still experience the power of worship with us. We stream our Sunday
+            services live every week on YouTube — completely free.</p>
+          <p style="color:rgba(255,255,255,.7);font-size:.88rem;margin-bottom:28px">Next Sunday service begins in:</p>
+          <div class="countdown-wrap">
+            <div class="countdown-box"><span class="countdown-num" id="cd-days">00</span><span
+                class="countdown-label">Days</span></div>
+            <div class="countdown-box"><span class="countdown-num" id="cd-hours">00</span><span
+                class="countdown-label">Hours</span></div>
+            <div class="countdown-box"><span class="countdown-num" id="cd-mins">00</span><span
+                class="countdown-label">Mins</span></div>
+            <div class="countdown-box"><span class="countdown-num" id="cd-secs">00</span><span
+                class="countdown-label">Secs</span></div>
+          </div>
+          <a href="https://www.youtube.com/@thefirstbaptistchurchlagos" target="_blank" rel="noopener"
+            class="btn btn-primary" id="yt-subscribe-btn">
+            <i class="fab fa-youtube"></i> Subscribe on YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FIRST TIMER ==================== -->
+  <section id="first-timer">
+    <div class="container">
+      <div class="ft-grid">
+        <div>
+          <div class="section-label reveal">First Timer?</div>
+          <h2 class="section-title reveal reveal-delay-1">What to Expect<br /><em>on Your First Visit</em></h2>
+          <p class="section-subtitle reveal reveal-delay-2">We want your first visit to feel as warm and easy as
+            possible. Here's everything you need to know before you arrive.</p>
+          <div class="ft-steps">
+            <div class="ft-step reveal reveal-delay-1">
+              <div class="ft-num">1</div>
+              <div class="ft-step-content">
+                <h4>Come as you are</h4>
+                <p>There's no dress code requirement — come dressed comfortably. Most members dress in smart-casual or
+                  traditional Nigerian attire.</p>
+              </div>
+            </div>
+            <div class="ft-step reveal reveal-delay-2">
+              <div class="ft-num">2</div>
+              <div class="ft-step-content">
+                <h4>Arrive a little early</h4>
+                <p>We recommend arriving 10–15 minutes before service begins so you can settle in and be welcomed by our
+                  ushers.</p>
+              </div>
+            </div>
+            <div class="ft-step reveal reveal-delay-3">
+              <div class="ft-num">3</div>
+              <div class="ft-step-content">
+                <h4>Your children are safe with us</h4>
+                <p>We have a dedicated, supervised Children's Church that runs simultaneously with the main service —
+                  age 3 to 12 years.</p>
+              </div>
+            </div>
+            <div class="ft-step reveal reveal-delay-4">
+              <div class="ft-num">4</div>
+              <div class="ft-step-content">
+                <h4>Meet someone after service</h4>
+                <p>Our Welcoming Team will be watching out for first-timers. Don't be shy — introduce yourself, and
+                  we'll help connect you to the community.</p>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:36px" class="reveal">
+            <a href="#contact" class="btn btn-green"><i class="fas fa-calendar-check"></i> Plan Your Visit Now</a>
+          </div>
+        </div>
+        <div class="ft-img-stack reveal reveal-delay-2">
+          <img src="assets/images/church_worship.jpg" alt="Warm welcoming church community at TFBC Lagos"
+            class="ft-img-main" />
+          <div class="ft-card">
+            <div class="ft-card-icon"><i class="fas fa-heart"></i></div>
+            <div class="label"><strong>You are welcome here</strong>Whoever you are, wherever you're from.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <div class="about-decor"></div>
+          <img src="assets/images/church_worship.jpg" alt="TFBC Lagos congregation in worship" class="about-img-main" />
+          <div class="about-img-card">
+            <div>
+              <div class="num">5K<span>+</span></div>
+            </div>
+            <div class="label">Online followers &amp; growing community</div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-label reveal">Our Story</div>
+          <h2 class="section-title reveal reveal-delay-1">A Church Built on<br /><em>Faith &amp; Family</em></h2>
+          <p class="section-subtitle reveal reveal-delay-2" style="margin-bottom:16px">The First Baptist Church, Lagos —
+            lovingly known as TFBC Lagos — is a vibrant Christian community rooted in the timeless truth of God's Word.
+            We are more than a church; we are a family.</p>
+          <p class="section-subtitle reveal reveal-delay-2">Our doors are open to all — the seeker, the believer, the
+            struggler, and the overcomer. Come as you are, and discover a community that will walk alongside you in
+            every season of life.</p>
+          <div class="values reveal reveal-delay-3">
+            <div class="value-card"><i class="fas fa-book-open"></i>
+              <h4>Word-Centered</h4>
+              <p>Every message rooted in scripture, guiding lives with truth.</p>
+            </div>
+            <div class="value-card"><i class="fas fa-heart"></i>
+              <h4>Spirit-Led</h4>
+              <p>Empowered by the Holy Spirit for authentic worship.</p>
+            </div>
+            <div class="value-card"><i class="fas fa-hands-holding-heart"></i>
+              <h4>Family-Focused</h4>
+              <p>Building strong bonds in Christ, one family at a time.</p>
+            </div>
+            <div class="value-card"><i class="fas fa-globe-africa"></i>
+              <h4>Community-Driven</h4>
+              <p>Serving Lagos and beyond with love and compassion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PASTORAL TEAM ==================== -->
+  <section id="pastoral-team">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal">Our Leaders</div>
+        <h2 class="section-title reveal reveal-delay-1">Meet the <em>Pastoral Team</em></h2>
+        <p class="section-subtitle reveal reveal-delay-2">Shepherds appointed by God to lead, teach, and care for the
+          TFBC Lagos family with love and integrity.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-photo">
+            <img src="assets/images/pastor_lead.jpg" alt="Senior Pastor - The First Baptist Church Lagos" />
+            <div class="team-photo-overlay"></div>
+            <div class="team-socials">
+              <a href="#" class="team-social-btn" aria-label="Email pastor"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.facebook.com/thefirstbaptistchurchlagos/" target="_blank" rel="noopener"
+                class="team-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <div class="role">Senior Pastor</div>
+            <h3>Rev. [Pastor's Name]</h3>
+            <p>Our Senior Pastor leads TFBC Lagos with wisdom, grace, and a deep passion for the Word of God and the
+              people of Lagos.</p>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-photo">
+            <img src="assets/images/pastor_associate.jpg" alt="Associate Pastor - TFBC Lagos" />
+            <div class="team-photo-overlay"></div>
+            <div class="team-socials">
+              <a href="#" class="team-social-btn" aria-label="Email pastor"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.facebook.com/thefirstbaptistchurchlagos/" target="_blank" rel="noopener"
+                class="team-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <div class="role">Associate Pastor</div>
+            <h3>Rev. [Associate's Name]</h3>
+            <p>Serving alongside the Senior Pastor, our Associate Pastor oversees pastoral care and discipleship
+              programmes for the congregation.</p>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-photo">
+            <img src="assets/images/minister_women.jpg" alt="Women's Ministry Director - TFBC Lagos" />
+            <div class="team-photo-overlay"></div>
+            <div class="team-socials">
+              <a href="#" class="team-social-btn" aria-label="Email minister"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.facebook.com/thefirstbaptistchurchlagos/" target="_blank" rel="noopener"
+                class="team-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <div class="role">Women's Ministry Director</div>
+            <h3>[Minister's Name]</h3>
+            <p>A dedicated minister who leads the Women's Ministry with a heart for empowering women in faith, purpose,
+              and community.</p>
+          </div>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:32px;font-size:.85rem;color:var(--text-light);font-style:italic">
+        * Please update the pastoral team names and photos with the actual details from the church office.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== MINISTRIES ==================== -->
+  <section id="ministries">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal">Get Involved</div>
+        <h2 class="section-title reveal reveal-delay-1">Our <em>Ministries</em></h2>
+        <p class="section-subtitle reveal reveal-delay-2">Find your place and purpose in the body of Christ through one
+          of our vibrant ministry arms.</p>
+      </div>
+      <div class="ministries-grid">
+        <div class="ministry-card mc-1 reveal">
+          <div class="ministry-icon mi-1"><i class="fas fa-child"></i></div>
+          <h3>Children's Ministry</h3>
+          <p>A safe, fun, and Bible-centred environment where children ages 3–12 discover God's love through worship,
+            stories, and activities.</p>
+        </div>
+        <div class="ministry-card mc-2 reveal reveal-delay-1">
+          <div class="ministry-icon mi-2"><i class="fas fa-fire"></i></div>
+          <h3>Youth Ministry</h3>
+          <p>Empowering teenagers and young adults to live boldly for Christ through fellowship, mentorship, and
+            impactful outreach.</p>
+        </div>
+        <div class="ministry-card mc-3 reveal reveal-delay-2">
+          <div class="ministry-icon mi-3"><i class="fas fa-user-tie"></i></div>
+          <h3>Men's Fellowship</h3>
+          <p>Building godly men of character through Bible study, accountability, and servant leadership within the home
+            and church.</p>
+        </div>
+        <div class="ministry-card mc-4 reveal reveal-delay-3">
+          <div class="ministry-icon mi-4"><i class="fas fa-female"></i></div>
+          <h3>Women's Ministry</h3>
+          <p>A sisterhood of faith — nurturing women to walk in their God-given calling through prayer, mentorship, and
+            community.</p>
+        </div>
+        <div class="ministry-card mc-5 reveal reveal-delay-1">
+          <div class="ministry-icon mi-5"><i class="fas fa-music"></i></div>
+          <h3>Choir &amp; Worship</h3>
+          <p>Spirit-filled musicians and singers who lead the congregation into the presence of God through anointed
+            worship every service.</p>
+        </div>
+        <div class="ministry-card mc-6 reveal reveal-delay-2">
+          <div class="ministry-icon mi-6"><i class="fas fa-hands-helping"></i></div>
+          <h3>Outreach &amp; Missions</h3>
+          <p>Extending the love of Christ beyond our walls through community service, evangelism, and support for the
+            underprivileged in Lagos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERMONS ==================== -->
+  <section id="sermons">
+    <div class="container">
+      <div class="sermons-header">
+        <div>
+          <div class="section-label reveal">Messages</div>
+          <h2 class="section-title reveal reveal-delay-1">Recent <em>Sermons</em></h2>
+        </div>
+        <a href="https://www.youtube.com/@thefirstbaptistchurchlagos" target="_blank" rel="noopener"
+          class="btn btn-green reveal" id="all-sermons-btn">
+          <i class="fab fa-youtube"></i> All Sermons
+        </a>
+      </div>
+      <div class="featured-sermon reveal">
+        <div class="featured-sermon-inner">
+          <div class="sermon-video-wrap">
+            <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=thefirstbaptistchurchlagos"
+              title="TFBC Lagos Latest Sermon"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="featured-sermon-info">
+            <span class="sermon-tag">Featured Message</span>
+            <h3>Walking in Faith: Living Beyond Your Fears</h3>
+            <div class="sermon-meta">
+              <span><i class="fas fa-calendar"></i> July 2025</span>
+              <span><i class="fas fa-user"></i> TFBC Lagos Pulpit</span>
+            </div>
+            <div class="sermon-scripture">"For God has not given us a spirit of fear, but of power and of love and of a
+              sound mind." — 2 Timothy 1:7</div>
+            <a href="https://www.youtube.com/@thefirstbaptistchurchlagos" target="_blank" rel="noopener"
+              class="btn btn-green" id="watch-latest-btn"><i class="fab fa-youtube"></i> Watch on YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div class="sermon-cards">
+        <div class="sermon-card reveal">
+          <div class="sermon-card-thumb">
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1e5438,#2d7a52)"></div>
+            <div class="play-btn"><i class="fas fa-play"></i></div>
+            <div
+              style="position:absolute;bottom:12px;left:12px;right:12px;font-family:'Playfair Display',serif;font-size:.95rem;color:white;font-weight:600;z-index:3">
+              The Power of Prayer</div>
+          </div>
+          <div class="sermon-card-body">
+            <div class="date">June 2025</div>
+            <h4>The Power of Prayer in the Life of a Believer</h4>
+            <div class="preacher"><i class="fas fa-user-tie"></i> TFBC Lagos Pulpit</div>
+          </div>
+        </div>
+        <div class="sermon-card reveal reveal-delay-1">
+          <div class="sermon-card-thumb">
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#3a2e0a,#8b6f1a)"></div>
+            <div class="play-btn"><i class="fas fa-play"></i></div>
+            <div
+              style="position:absolute;bottom:12px;left:12px;right:12px;font-family:'Playfair Display',serif;font-size:.95rem;color:white;font-weight:600;z-index:3">
+              Amazing Grace</div>
+          </div>
+          <div class="sermon-card-body">
+            <div class="date">May 2025</div>
+            <h4>Amazing Grace: Understanding God's Redemptive Love</h4>
+            <div class="preacher"><i class="fas fa-user-tie"></i> TFBC Lagos Pulpit</div>
+          </div>
+        </div>
+        <div class="sermon-card reveal reveal-delay-2">
+          <div class="sermon-card-thumb">
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1a2a3a,#2a4060)"></div>
+            <div class="play-btn"><i class="fas fa-play"></i></div>
+            <div
+              style="position:absolute;bottom:12px;left:12px;right:12px;font-family:'Playfair Display',serif;font-size:.95rem;color:white;font-weight:600;z-index:3">
+              Standing Firm</div>
+          </div>
+          <div class="sermon-card-body">
+            <div class="date">April 2025</div>
+            <h4>Standing Firm in Times of Trial &amp; Uncertainty</h4>
+            <div class="preacher"><i class="fas fa-user-tie"></i> TFBC Lagos Pulpit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIES ==================== -->
+  <section id="testimonies">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal">Changed Lives</div>
+        <h2 class="section-title reveal reveal-delay-1">What Our Members <em>Say</em></h2>
+        <p class="section-subtitle reveal reveal-delay-2">Real stories of faith, transformation, and belonging from the
+          TFBC Lagos family.</p>
+      </div>
+      <div class="testimonies-track">
+        <div class="testimony-card reveal">
+          <div class="testimony-quote">"</div>
+          <p>Coming to TFBC Lagos changed my life completely. I walked in broken and left restored. The Word preached
+            here is alive and the love of the family here is genuine.</p>
+          <div class="testimony-author">
+            <div class="testimony-avatar ta-1">A</div>
+            <div>
+              <div class="testimony-name">Adaeze Okafor</div>
+              <div class="testimony-role">Member since 2019</div>
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="testimony-card reveal reveal-delay-1">
+          <div class="testimony-quote">"</div>
+          <p>I've been in many churches, but TFBC Lagos is special. The preaching is powerful, the worship is anointed,
+            and every Sunday I leave feeling closer to God. Truly a glorious church.</p>
+          <div class="testimony-author">
+            <div class="testimony-avatar ta-2">E</div>
+            <div>
+              <div class="testimony-name">Emmanuel Taiwo</div>
+              <div class="testimony-role">Member since 2021</div>
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="testimony-card reveal reveal-delay-2">
+          <div class="testimony-quote">"</div>
+          <p>The youth ministry here transformed my son. He went from struggling with direction to becoming a confident
+            young man grounded in Christ. TFBC Lagos is family to us.</p>
+          <div class="testimony-author">
+            <div class="testimony-avatar ta-3">N</div>
+            <div>
+              <div class="testimony-name">Ngozi Balogun</div>
+              <div class="testimony-role">Member since 2018</div>
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PHOTO CAROUSEL ==================== -->
+  <section id="photo-carousel">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal">Our Community</div>
+        <h2 class="section-title reveal reveal-delay-1">Life at <em>TFBC Lagos</em></h2>
+        <p class="section-subtitle reveal reveal-delay-2">Moments of worship, fellowship, outreach, and celebration —
+          captured from the heart of our church family.</p>
+      </div>
+      <div class="pcarousel-wrap">
+        <div class="pcarousel-track" id="pcarouselTrack">
+          <div class="pcarousel-slide">
+            <img src="assets/images/church_worship.jpg" alt="Sunday Worship Service at TFBC Lagos" loading="lazy" />
+            <div class="pcarousel-caption">
+              <h4>Sunday Worship</h4>
+              <p>Spirit-filled services every Sunday</p>
+            </div>
+          </div>
+          <div class="pcarousel-slide">
+            <img src="assets/images/gallery_worship.jpg" alt="Praise and Worship at TFBC Lagos" loading="lazy" />
+            <div class="pcarousel-caption">
+              <h4>Praise &amp; Worship</h4>
+              <p>Lifting up the name of Jesus together</p>
+            </div>
+          </div>
+          <div class="pcarousel-slide">
+            <img src="assets/images/gallery_youth.jpg" alt="Youth Ministry at TFBC Lagos" loading="lazy" />
+            <div class="pcarousel-caption">
+              <h4>Youth Ministry</h4>
+              <p>Raising the next generation for Christ</p>
+            </div>
+          </div>
+          <div class="pcarousel-slide">
+            <img src="assets/images/gallery_outreach.jpg" alt="Community Outreach by TFBC Lagos" loading="lazy" />
+            <div class="pcarousel-caption">
+              <h4>Community Outreach</h4>
+              <p>Extending the love of Christ beyond our walls</p>
+            </div>
+          </div>
+          <div class="pcarousel-slide">
+            <img src="assets/images/church_worship1.jpg" alt="Congregation at TFBC Lagos" loading="lazy" />
+            <div class="pcarousel-caption">
+              <h4>Our Congregation</h4>
+              <p>A family united in faith and love</p>
+            </div>
+          </div>
+          <div class="pcarousel-slide">
+            <img src="assets/images/church_giving.jpg" alt="Giving at TFBC Lagos" loading="lazy" />
+            <div class="pcarousel-caption">
+              <h4>Generous Giving</h4>
+              <p>Sowing seeds for God's kingdom</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pcarousel-controls">
+        <button class="pcarousel-btn" id="pcarouselPrev" aria-label="Previous slide"><i
+            class="fas fa-chevron-left"></i></button>
+        <div class="pcarousel-dots" id="pcarouselDots"></div>
+        <button class="pcarousel-btn" id="pcarouselNext" aria-label="Next slide"><i
+            class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EVENTS ==================== -->
+  <section id="events">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal">What's On</div>
+        <h2 class="section-title reveal reveal-delay-1">Upcoming <em>Events</em></h2>
+        <p class="section-subtitle reveal reveal-delay-2">Join us for special services, celebrations, and community
+          gatherings throughout the year.</p>
+      </div>
+      <div class="events-grid">
+        <div class="event-card reveal">
+          <div class="event-card-header">
+            <div class="event-date-badge"><span class="day">20</span><span class="month">Jul</span></div>
+            <span class="event-type type-service">Sunday Service</span>
+          </div>
+          <div class="event-body">
+            <h3>Thanksgiving &amp; Praise Sunday</h3>
+            <p>A special Sunday of gratitude, worship, and praise as we celebrate God's faithfulness over our church
+              family.</p>
+            <div class="event-details">
+              <div class="event-detail"><i class="fas fa-clock"></i> 7:00 AM &amp; 9:30 AM</div>
+              <div class="event-detail"><i class="fas fa-map-marker-alt"></i> TFBC Main Auditorium, Lagos</div>
+            </div>
+          </div>
+        </div>
+        <div class="event-card reveal reveal-delay-1">
+          <div class="event-card-header">
+            <div class="event-date-badge"><span class="day">27</span><span class="month">Jul</span></div>
+            <span class="event-type type-special">Special Programme</span>
+          </div>
+          <div class="event-body">
+            <h3>Annual Church Retreat 2025</h3>
+            <p>A time of spiritual renewal, prayer, and fellowship away from the city. All members are encouraged to
+              attend.</p>
+            <div class="event-details">
+              <div class="event-detail"><i class="fas fa-clock"></i> 8:00 AM onwards</div>
+              <div class="event-detail"><i class="fas fa-map-marker-alt"></i> Venue to be announced</div>
+            </div>
+          </div>
+        </div>
+        <div class="event-card reveal reveal-delay-2">
+          <div class="event-card-header">
+            <div class="event-date-badge"><span class="day">03</span><span class="month">Aug</span></div>
+            <span class="event-type type-youth">Youth</span>
+          </div>
+          <div class="event-body">
+            <h3>Youth Leadership Summit</h3>
+            <p>Empowering the next generation of Christian leaders with Biblical principles, mentorship, and workshops.
+            </p>
+            <div class="event-details">
+              <div class="event-detail"><i class="fas fa-clock"></i> 10:00 AM – 4:00 PM</div>
+              <div class="event-detail"><i class="fas fa-map-marker-alt"></i> TFBC Youth Hall, Lagos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY ==================== -->
+  <section id="gallery">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal">Our Community</div>
+        <h2 class="section-title reveal reveal-delay-1">Life at <em style="color:var(--gold-light)">TFBC Lagos</em></h2>
+        <p class="section-subtitle reveal reveal-delay-2">A glimpse into the worship, outreach, and fellowship that make
+          our church family special.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" onclick="openLightbox('assets/images/gallery_worship.jpg')">
+          <img src="assets/images/gallery_worship.jpg" alt="TFBC Lagos Worship Night" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox('assets/images/gallery_outreach.jpg')">
+          <img src="assets/images/gallery_outreach.jpg" alt="TFBC Lagos Community Outreach" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox('assets/images/gallery_youth.jpg')">
+          <img src="assets/images/gallery_youth.jpg" alt="TFBC Lagos Youth Fellowship" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox('assets/images/church_worship.jpg')">
+          <img src="assets/images/church_worship.jpg" alt="TFBC Lagos Sunday Service" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox('assets/images/church_hero.jpg')">
+          <img src="assets/images/church_hero.jpg" alt="TFBC Lagos Sanctuary" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lb-close" onclick="closeLightbox()" aria-label="Close image viewer"><i
+        class="fas fa-times"></i></button>
+    <img id="lb-img" src="" alt="Gallery image" />
+  </div>
+
+  <!-- ==================== PRAYER REQUEST ==================== -->
+  <section id="prayer">
+    <div class="container">
+      <div class="prayer-grid">
+        <div class="prayer-intro">
+          <div class="section-label reveal">Intercession</div>
+          <h2 class="section-title reveal reveal-delay-1">Submit a <em>Prayer Request</em></h2>
+          <p class="section-subtitle reveal reveal-delay-2">We believe in the power of prayer. Our prayer team
+            intercedes faithfully for every request submitted to us — nothing is too big or too small for God.</p>
+          <div class="big-verse reveal reveal-delay-2">"Is anyone among you sick? Let them call the elders of the church
+            to pray over them..." — James 5:14</div>
+          <div class="prayer-promises reveal reveal-delay-3">
+            <div class="prayer-promise"><i class="fas fa-lock"></i>
+              <p><strong>Completely confidential.</strong> Your prayer request is handled with care and privacy by our
+                dedicated prayer team.</p>
+            </div>
+            <div class="prayer-promise"><i class="fas fa-users"></i>
+              <p><strong>Prayed over by a team.</strong> Multiple intercessors will lift your request before God each
+                week.</p>
+            </div>
+            <div class="prayer-promise"><i class="fas fa-bell"></i>
+              <p><strong>Follow-up available.</strong> You may request to be followed up with after your prayer is
+                submitted.</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="prayer-form-wrap">
+            <h3>Share Your Request</h3>
+            <p>We honour your trust. Every request is treated with love and discretion.</p>
+            <form id="prayer-form" onsubmit="handlePrayerSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="pray-name">Your Name</label>
+                  <input type="text" id="pray-name" class="form-control" placeholder="First name" required />
+                </div>
+                <div class="form-group">
+                  <label for="pray-phone">Phone / WhatsApp</label>
+                  <input type="tel" id="pray-phone" class="form-control" placeholder="+234 ..." />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="pray-category">Prayer Category</label>
+                <select id="pray-category" class="form-control">
+                  <option value="">Select a category...</option>
+                  <option>Health &amp; Healing</option>
+                  <option>Family &amp; Relationships</option>
+                  <option>Financial Breakthrough</option>
+                  <option>Career &amp; Purpose</option>
+                  <option>Spiritual Growth</option>
+                  <option>Salvation for a loved one</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="pray-request">Your Prayer Request</label>
+                <textarea id="pray-request" class="form-control" placeholder="Share your prayer need here..."
+                  style="min-height:140px" required></textarea>
+              </div>
+              <div class="form-group" style="display:flex;align-items:center;gap:10px">
+                <input type="checkbox" id="pray-followup"
+                  style="width:18px;height:18px;accent-color:var(--green-primary)" />
+                <label for="pray-followup"
+                  style="font-size:.85rem;color:var(--text-mid);font-weight:400;margin-bottom:0">I would like someone
+                  from the church to follow up with me</label>
+              </div>
+              <button type="submit" class="btn btn-green" id="prayer-submit-btn"
+                style="width:100%;justify-content:center">
+                <i class="fas fa-praying-hands"></i> Submit Prayer Request
+              </button>
+            </form>
+            <div id="prayer-success"
+              style="display:none;text-align:center;padding:28px;background:var(--green-light);border-radius:var(--radius);margin-top:16px">
+              <i class="fas fa-check-circle"
+                style="font-size:2.5rem;color:var(--green-primary);margin-bottom:12px;display:block"></i>
+              <strong style="color:var(--green-dark);font-size:1.1rem">Your prayer has been received 🙏</strong>
+              <p style="font-size:.88rem;color:var(--text-mid);margin-top:6px">Our prayer team will be interceding on
+                your behalf. May God answer you speedily.</p>
+            </div>
+            <div class="privacy-note"><i class="fas fa-shield-alt"></i><span>Your request is completely private and will
+                only be seen by our authorised prayer team. We will never share your details.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GIVE ==================== -->
+  <section id="give">
+    <div class="container">
+      <div class="give-grid">
+        <div class="give-content">
+          <div class="section-label reveal">Generosity</div>
+          <h2 class="section-title reveal reveal-delay-1">Give to the<br /><em style="color:var(--gold-light)">Work of
+              God</em></h2>
+          <p class="section-subtitle reveal reveal-delay-2" style="color:rgba(255,255,255,.75)">Your giving fuels the
+            mission of God's kingdom through TFBC Lagos — from outreach and community support to ministry programmes and
+            church growth.</p>
+          <div class="give-verse reveal reveal-delay-2">"Each of you should give what you have decided in your heart to
+            give, not reluctantly or under compulsion, for God loves a cheerful giver." — 2 Corinthians 9:7</div>
+          <div class="bank-cards reveal reveal-delay-3">
+            <div class="bank-card"><i class="fas fa-university"></i>
+              <div>
+                <div class="bank-name">Zenith Bank</div>
+                <div class="account-num">1234567890</div>
+                <div class="account-name">The First Baptist Church Lagos</div>
+              </div>
+            </div>
+            <div class="bank-card"><i class="fas fa-piggy-bank"></i>
+              <div>
+                <div class="bank-name">Access Bank</div>
+                <div class="account-num">0987654321</div>
+                <div class="account-name">The First Baptist Church Lagos</div>
+              </div>
+            </div>
+          </div>
+          <p style="font-size:.76rem;color:rgba(255,255,255,.4);margin-top:10px;font-style:italic">* Confirm account
+            details with the church office before making a transfer.</p>
+        </div>
+        <div class="give-img reveal reveal-delay-1"><img src="assets/images/church_giving.jpg"
+            alt="Give to TFBC Lagos" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BAPTISM & MEMBERSHIP ==================== -->
+  <section id="membership">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal">Take the Next Step</div>
+        <h2 class="section-title reveal reveal-delay-1">Baptism &amp; <em>Membership</em></h2>
+        <p class="section-subtitle reveal reveal-delay-2">Ready to go deeper? Whether you're taking your first step of
+          faith or committing to this local church family, we'd love to walk with you.</p>
+      </div>
+      <div class="membership-grid">
+        <div class="mem-card reveal">
+          <div class="mem-icon mi-baptism"><i class="fas fa-water"></i></div>
+          <h3>Water Baptism</h3>
+          <p>Baptism is a public declaration of your faith in Jesus Christ — a beautiful, meaningful step of obedience.
+            We conduct baptisms regularly at TFBC Lagos and would love to celebrate yours.</p>
+          <div class="mem-steps">
+            <div class="mem-step"><i class="fas fa-check-circle"></i> Confess Jesus as Lord and Saviour</div>
+            <div class="mem-step"><i class="fas fa-check-circle"></i> Attend a pre-baptism class</div>
+            <div class="mem-step"><i class="fas fa-check-circle"></i> Be baptised by immersion</div>
+            <div class="mem-step"><i class="fas fa-check-circle"></i> Join the community of believers</div>
+          </div>
+          <div style="margin-top:24px">
+            <a href="#contact" class="btn btn-ghost" style="font-size:.85rem;padding:12px 22px"><i
+                class="fas fa-envelope"></i> Express Interest</a>
+          </div>
+        </div>
+        <div class="mem-card reveal reveal-delay-1">
+          <div class="mem-icon mi-membership"><i class="fas fa-id-card"></i></div>
+          <h3>Church Membership</h3>
+          <p>Becoming a member of TFBC Lagos means joining the family in a formal, committed way. Members enjoy full
+            access to pastoral care, ministry leadership, and all church programmes.</p>
+          <div class="mem-steps">
+            <div class="mem-step"><i class="fas fa-check-circle"></i> Regular attendance for 3+ months</div>
+            <div class="mem-step"><i class="fas fa-check-circle"></i> Attend a New Members' Class</div>
+            <div class="mem-step"><i class="fas fa-check-circle"></i> Interview with a pastor</div>
+            <div class="mem-step"><i class="fas fa-check-circle"></i> Be formally welcomed into the family</div>
+          </div>
+          <div style="margin-top:24px">
+            <a href="#contact" class="btn btn-ghost" style="font-size:.85rem;padding:12px 22px"><i
+                class="fas fa-envelope"></i> Begin the Process</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NEWSLETTER / WHATSAPP ==================== -->
+  <section id="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-text">
+          <div class="section-label reveal">Stay Connected</div>
+          <h2 class="reveal reveal-delay-1">Never Miss an Update</h2>
+          <p class="reveal reveal-delay-2">Get weekly sermon summaries, event announcements, and devotionals delivered
+            straight to your inbox or WhatsApp. Stay connected with the TFBC Lagos family wherever you are.</p>
+        </div>
+        <div class="newsletter-channels reveal reveal-delay-2">
+          <div class="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Enter your email address..."
+              aria-label="Email for newsletter" />
+            <button type="button" onclick="handleNewsletter()" id="newsletter-btn">Subscribe</button>
+          </div>
+          <a href="https://wa.me/2340000000000?text=Hello%20TFBC%20Lagos%2C%20please%20add%20me%20to%20your%20WhatsApp%20broadcast%20list!"
+            target="_blank" rel="noopener" class="wa-btn" id="whatsapp-join-btn">
+            <i class="fab fa-whatsapp"></i> Join our WhatsApp Broadcast
+          </a>
+          <p style="font-size:.75rem;color:rgba(255,255,255,.5);padding-left:4px">We respect your privacy. No spam,
+            ever. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="section-label reveal">Get In Touch</div>
+          <h2 class="section-title reveal reveal-delay-1">We'd Love to<br /><em>Hear From You</em></h2>
+          <p class="section-subtitle reveal reveal-delay-2">Whether you're planning your first visit or have questions
+            about our community, we're here to help.</p>
+          <div class="contact-info-cards">
+            <div class="contact-card reveal">
+              <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Our Location</h4>
+                <p>The First Baptist Church<br />Lagos, Nigeria</p>
+              </div>
+            </div>
+            <div class="contact-card reveal reveal-delay-1">
+              <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+2340000000000">+234 000 000 0000</a></p>
+              </div>
+            </div>
+            <div class="contact-card reveal reveal-delay-2">
+              <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:info@tfbclagos.org">info@tfbclagos.org</a></p>
+              </div>
+            </div>
+            <div class="contact-card reveal reveal-delay-3">
+              <div class="contact-card-icon"><i class="fab fa-facebook"></i></div>
+              <div>
+                <h4>Social Media</h4>
+                <p><a href="https://www.facebook.com/thefirstbaptistchurchlagos/" target="_blank"
+                    rel="noopener">Facebook</a> · <a href="https://www.youtube.com/@thefirstbaptistchurchlagos"
+                    target="_blank" rel="noopener">YouTube</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="map-embed reveal"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5693242884813!2d3.3945472999999997!3d6.4492977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b1a0b485665%3A0xdbc6b684e4dabbdb!2sThe%20First%20Baptist%20Church!5e0!3m2!1sen!2sng!4v1787167636744!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="TFBC Lagos Location"></iframe></div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="contact-form-wrap">
+            <h3>Plan Your Visit</h3>
+            <p>Let us know you're coming — we'll be sure to give you a warm welcome!</p>
+            <form id="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-group"><label for="first-name">First Name</label><input type="text" id="first-name"
+                    class="form-control" placeholder="John" required /></div>
+                <div class="form-group"><label for="last-name">Last Name</label><input type="text" id="last-name"
+                    class="form-control" placeholder="Doe" required /></div>
+              </div>
+              <div class="form-group"><label for="email">Email Address</label><input type="email" id="email"
+                  class="form-control" placeholder="john@example.com" required /></div>
+              <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone"
+                  class="form-control" placeholder="+234 000 000 0000" /></div>
+              <div class="form-group">
+                <label for="service">Preferred Service</label>
+                <select id="service" class="form-control">
+                  <option value="">Select a service time...</option>
+                  <option>Sunday – First Service (7:00 AM)</option>
+                  <option>Sunday – Second Service (9:30 AM)</option>
+                  <option>Wednesday Midweek (6:00 PM)</option>
+                  <option>Friday Prayer Night (9:00 PM)</option>
+                </select>
+              </div>
+              <div class="form-group"><label for="message">Message (Optional)</label><textarea id="message"
+                  class="form-control" placeholder="Tell us how we can prepare for your visit..."></textarea></div>
+              <button type="submit" class="btn btn-green" id="submit-btn" style="width:100%;justify-content:center"><i
+                  class="fas fa-paper-plane"></i> Submit</button>
+            </form>
+            <div id="form-success"
+              style="display:none;text-align:center;padding:24px;background:var(--green-light);border-radius:var(--radius);margin-top:16px">
+              <i class="fas fa-check-circle"
+                style="font-size:2rem;color:var(--green-primary);margin-bottom:10px;display:block"></i>
+              <strong style="color:var(--green-dark)">Thank you! We look forward to seeing you.</strong>
+              <p style="font-size:.85rem;color:var(--text-mid);margin-top:4px">We'll be in touch soon with everything
+                you need for your visit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="brand-logo">
+              <div class="brand-badge"><svg viewBox="0 0 32 32" fill="none">
+                  <rect x="13" y="2" width="6" height="28" rx="2" fill="#C8961A" />
+                  <rect x="2" y="9" width="28" height="6" rx="2" fill="#C8961A" />
+                </svg></div>
+              <div class="brand-name">The First Baptist<br />Church, Lagos</div>
+            </div>
+            <p>A glorious church where faith, fellowship, &amp; family are cherished, nourished, and allowed to
+              flourish. — TFBC Lagos</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/thefirstbaptistchurchlagos/" target="_blank" rel="noopener"
+                class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/@thefirstbaptistchurchlagos" target="_blank" rel="noopener"
+                class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="https://wa.me/2340000000000" target="_blank" rel="noopener" class="social-link"
+                aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="mailto:info@tfbclagos.org" class="social-link" aria-label="Email"><i
+                  class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+              <li><a href="#pastoral-team"><i class="fas fa-chevron-right"></i> Leadership</a></li>
+              <li><a href="#sermons"><i class="fas fa-chevron-right"></i> Sermons</a></li>
+              <li><a href="#events"><i class="fas fa-chevron-right"></i> Events</a></li>
+              <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+              <li><a href="#membership"><i class="fas fa-chevron-right"></i> Membership</a></li>
+              <li><a href="#give"><i class="fas fa-chevron-right"></i> Give</a></li>
+              <li><a href="#prayer"><i class="fas fa-chevron-right"></i> Prayer Request</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Ministries</h4>
+            <ul>
+              <li><a href="#ministries"><i class="fas fa-chevron-right"></i> Children's Ministry</a></li>
+              <li><a href="#ministries"><i class="fas fa-chevron-right"></i> Youth Ministry</a></li>
+              <li><a href="#ministries"><i class="fas fa-chevron-right"></i> Men's Fellowship</a></li>
+              <li><a href="#ministries"><i class="fas fa-chevron-right"></i> Women's Ministry</a></li>
+              <li><a href="#ministries"><i class="fas fa-chevron-right"></i> Choir &amp; Worship</a></li>
+              <li><a href="#ministries"><i class="fas fa-chevron-right"></i> Outreach &amp; Missions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Service Times</h4>
+            <div class="footer-service">
+              <div class="footer-service-item">
+                <div class="fsday">Sunday</div>
+                <div class="fstime">1st Service: 7:00 AM</div>
+                <div class="fstime">2nd Service: 9:30 AM</div>
+              </div>
+              <div class="footer-service-item">
+                <div class="fsday">Wednesday</div>
+                <div class="fstime">Midweek: 6:00 PM</div>
+              </div>
+              <div class="footer-service-item">
+                <div class="fsday">Friday</div>
+                <div class="fstime">Prayer Night: 9:00 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 The First Baptist Church, Lagos. All rights reserved.</p>
+        <p>Crafted with <i class="fas fa-heart" style="color:var(--coral)"></i> for the glory of God</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button id="back-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- ==================== COOKIE BANNER ==================== -->
+  <div id="cookie-banner" role="alert">
+    <p>We use cookies to improve your experience on our website. By continuing to browse, you agree to our <a
+        href="#">Cookie Policy</a> and <a href="#">Privacy Policy</a>.</p>
+    <div class="cookie-btns">
+      <button id="accept-cookies">Accept</button>
+      <button id="decline-cookies">Decline</button>
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    // ── Announcement bar offset for navbar ──
+    const announceBar = document.getElementById('announce-bar');
+    const navbar = document.getElementById('navbar');
+    const closeAnnounce = document.getElementById('close-announce');
+    let barVisible = true;
+
+    function updateNavOffset() {
+      const barH = barVisible ? announceBar.offsetHeight : 0;
+      navbar.style.top = barH + 'px';
+    }
+    updateNavOffset();
+    window.addEventListener('resize', updateNavOffset);
+    closeAnnounce.addEventListener('click', () => {
+      announceBar.style.display = 'none';
+      barVisible = false;
+      updateNavOffset();
+    });
+
+    // ── Navbar scroll effect ──
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+    }, { passive: true });
+
+    // ── Mobile menu ──
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    document.getElementById('mobile-close').addEventListener('click', () => mobileMenu.classList.remove('open'));
+    hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
+    document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+    // ── Scroll reveal ──
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // ── Countdown to next Sunday 7AM WAT (UTC+1) ──
+    function updateCountdown() {
+      const now = new Date();
+      const target = new Date(now);
+      const dayOfWeek = now.getDay(); // 0=Sun
+      const daysUntilSun = dayOfWeek === 0 ? 7 : 7 - dayOfWeek;
+      target.setDate(target.getDate() + (dayOfWeek === 0 && now.getHours() < 7 ? 0 : daysUntilSun));
+      target.setHours(7, 0, 0, 0);
+      const diff = target - now;
+      if (diff <= 0) { document.getElementById('cd-days').textContent = '00'; return; }
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      document.getElementById('cd-days').textContent = String(d).padStart(2, '0');
+      document.getElementById('cd-hours').textContent = String(h).padStart(2, '0');
+      document.getElementById('cd-mins').textContent = String(m).padStart(2, '0');
+      document.getElementById('cd-secs').textContent = String(s).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // ── Gallery lightbox ──
+    function openLightbox(src) {
+      document.getElementById('lb-img').src = src;
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('lightbox').addEventListener('click', function (e) {
+      if (e.target === this) closeLightbox();
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx0-TfNrD3sZM4Kk4QOfPajJF9rGnbXeyxl1nk8PW04fWktO-p17wzH37Gka32pgCHGcg/exec';
+
+    // ── Contact form ──
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submit-btn');
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      btn.disabled = true;
+
+      const data = new FormData();
+      data.append('type', 'contact');
+      data.append('firstName', document.getElementById('first-name').value);
+      data.append('lastName', document.getElementById('last-name').value);
+      data.append('email', document.getElementById('email').value);
+      data.append('phone', document.getElementById('phone').value);
+      data.append('service', document.getElementById('service').value);
+      data.append('message', document.getElementById('message').value);
+
+      fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: data
+      })
+        .then(() => {
+          document.getElementById('contact-form').style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          btn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit';
+          btn.disabled = false;
+          alert('An error occurred. Please try again.');
+        });
+    }
+
+    // ── Prayer form ──
+    function handlePrayerSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('prayer-submit-btn');
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+      btn.disabled = true;
+
+      const data = new FormData();
+      data.append('type', 'prayer');
+      data.append('name', document.getElementById('pray-name').value);
+      data.append('phone', document.getElementById('pray-phone').value);
+      data.append('category', document.getElementById('pray-category').value);
+      data.append('request', document.getElementById('pray-request').value);
+      data.append('followup', document.getElementById('pray-followup').checked);
+
+      fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: data
+      })
+        .then(() => {
+          document.getElementById('prayer-form').style.display = 'none';
+          document.getElementById('prayer-success').style.display = 'block';
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          btn.innerHTML = '<i class="fas fa-praying-hands"></i> Submit Prayer Request';
+          btn.disabled = false;
+          alert('An error occurred. Please try again.');
+        });
+    }
+
+    // ── Newsletter ──
+    function handleNewsletter() {
+      const email = document.getElementById('newsletter-email').value;
+      const btn = document.getElementById('newsletter-btn');
+      if (!email || !email.includes('@')) { alert('Please enter a valid email address.'); return; }
+      btn.textContent = '✓ Subscribed!';
+      btn.style.background = 'var(--green-primary)';
+      btn.disabled = true;
+      document.getElementById('newsletter-email').value = '';
+    }
+
+    // ── Back to top ──
+    const backTop = document.getElementById('back-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) backTop.classList.add('visible');
+      else backTop.classList.remove('visible');
+    }, { passive: true });
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // ── Cookie banner ──
+    const cookieBanner = document.getElementById('cookie-banner');
+    if (!localStorage.getItem('tfbc_cookies')) {
+      setTimeout(() => cookieBanner.classList.add('show'), 2000);
+    }
+    document.getElementById('accept-cookies').addEventListener('click', () => {
+      localStorage.setItem('tfbc_cookies', 'accepted');
+      cookieBanner.classList.remove('show');
+    });
+    document.getElementById('decline-cookies').addEventListener('click', () => {
+      localStorage.setItem('tfbc_cookies', 'declined');
+      cookieBanner.classList.remove('show');
+    });
+
+    // ===== HERO BACKGROUND CAROUSEL =====
+    (function () {
+      const slides = document.querySelectorAll('.hero-slide');
+      const dots = document.querySelectorAll('.hero-dot');
+      let current = 0;
+      let timer;
+
+      function goTo(n) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (n + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+      }
+
+      function next() { goTo(current + 1); }
+
+      function startAuto() {
+        clearInterval(timer);
+        timer = setInterval(next, 5000);
+      }
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          goTo(parseInt(dot.dataset.slide));
+          startAuto();
+        });
+      });
+
+      startAuto();
+    })();
+
+    // ===== PHOTO CAROUSEL =====
+    (function () {
+      const track = document.getElementById('pcarouselTrack');
+      const dotsWrap = document.getElementById('pcarouselDots');
+      const btnPrev = document.getElementById('pcarouselPrev');
+      const btnNext = document.getElementById('pcarouselNext');
+      if (!track) return;
+
+      const slides = track.querySelectorAll('.pcarousel-slide');
+      const total = slides.length;
+      const visible = window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+      const maxIndex = total - visible;
+      let current = 0;
+      let autoTimer;
+
+      // Build dots
+      for (let i = 0; i <= maxIndex; i++) {
+        const d = document.createElement('button');
+        d.className = 'pcarousel-dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Slide ' + (i + 1));
+        d.addEventListener('click', () => { goTo(i); resetAuto(); });
+        dotsWrap.appendChild(d);
+      }
+
+      function updateDots() {
+        dotsWrap.querySelectorAll('.pcarousel-dot').forEach((d, i) => {
+          d.classList.toggle('active', i === current);
+        });
+      }
+
+      function goTo(n) {
+        current = Math.max(0, Math.min(n, maxIndex));
+        const slideW = slides[0].offsetWidth + 20;
+        track.style.transform = 'translateX(-' + (current * slideW) + 'px)';
+        updateDots();
+      }
+
+      function resetAuto() {
+        clearInterval(autoTimer);
+        autoTimer = setInterval(() => goTo(current < maxIndex ? current + 1 : 0), 4500);
+      }
+
+      btnPrev.addEventListener('click', () => { goTo(current - 1); resetAuto(); });
+      btnNext.addEventListener('click', () => { goTo(current + 1); resetAuto(); });
+
+      resetAuto();
+    })();
+  </script>
+</body>
+
+</html>
